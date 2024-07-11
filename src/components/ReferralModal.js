@@ -349,7 +349,7 @@ const ReferralModal = ({ open, handleClose }) => {
     setTimeout(() => setShowToast(false), 3000); // Hide toast after 3 seconds
 
     try {
-      const response = await fetch('http://localhost:3001/api/referrals', {
+      const response = await fetch('https://accredian-backend-task-9n0x.onrender.com/api/referrals', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
